@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: pacman-1wxa
+  namespace: burrzinga-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:20e4464772a16dccedc6bb313a7be3a4a44652ecc012ba736b58496162daadd7
+        name: my-nodejs
+        resources: {}
+status: {}
