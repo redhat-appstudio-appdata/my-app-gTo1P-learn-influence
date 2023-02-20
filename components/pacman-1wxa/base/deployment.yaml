@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: pacman-1wxa
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:gTo1P-pacman-1wxa
+      - image: quay.io/redhat-appstudio/user-workload@sha256:20e4464772a16dccedc6bb313a7be3a4a44652ecc012ba736b58496162daadd7
         name: my-nodejs
         ports:
         - containerPort: 3001
